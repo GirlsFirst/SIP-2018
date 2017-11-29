@@ -29,9 +29,8 @@ while done == "NO":
 # Print the list of dictionaries.
 print(list_of_answers)
 
+# Example of how to iterate over the list of dictionaries and pull out particular pieces of information.
 names = []
 for s in range(len(list_of_answers)):
-
     names.append[list_of_answers[s]["name"]]
-
 print(names)
