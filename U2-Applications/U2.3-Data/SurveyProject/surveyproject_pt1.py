@@ -1,3 +1,13 @@
+'''
+In this program, we iterate over a list of survey questions and save
+the responses in a dictionary with a related, easier to read key that
+corresponds with each question.
+
+For students who finish this part of the program quickly, a student might
+extend the program to catch invalid or blank responses.
+'''
+
+
 
 # Create the dictionary to store the responses.
 answers = {}

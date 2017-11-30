@@ -1,3 +1,15 @@
+'''
+This program expands the previous program by looping continuously over the
+questions in the survey until the user says they are done collecting responses.
+Each individual response is a dictionary, and the set of all responses is saved
+as a list of dictionaries.
+
+For students who finish this part of the program quickly, encourage students to
+practice iterating over the list of dictionaries and gathering different pieces of the data.
+They might also choose to create a way for the user to quit providing input, or revise
+past answers.
+'''
+
 
 # Create a list of survey questions and a list of related keys that will be used when storing survey results.
 survey = [
@@ -24,7 +36,7 @@ while done == "NO":
 
     list_of_answers.append(answers)
 
-    done = raw_input("Are you done collecting information? Type YES or NO.     ")
+    done = raw_input("Are you done collecting information? Type YES or NO.     ").upper()
 
 # Print the list of dictionaries.
 print(list_of_answers)
@@ -32,5 +44,5 @@ print(list_of_answers)
 # Example of how to iterate over the list of dictionaries and pull out particular pieces of information.
 names = []
 for s in range(len(list_of_answers)):
-    names.append[list_of_answers[s]["name"]]
+    names.append(list_of_answers[s]["name"])
 print(names)
