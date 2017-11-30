@@ -5,7 +5,7 @@ To run on Mac: python3 surveyproject_pt1.py
 To run on Windows: python surveyproject_pt1.py
 
 ### Part 1: Gather One response
-This program gets one response to a survey and stores its answer as a dictionary.
+This program gets one response to a survey and stores the answer as a dictionary.
 
 ### Part 2: Gather Multiple Responses
 This program gets multiple responses and stores them as a list of dictionaries.
