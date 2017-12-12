@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
 #Wrap this in a function because we'll use it several times
-def GetFilteredDictionary(tweetblob):
+def GetFilteredDictionary(tweetblob, tweetSearch):
 	#Filter Words
 	wordsToFilter = ["about", "https", "in", "the", "thing", "will", "could", tweetSearch]
 	filteredDictionary = dict()
@@ -77,9 +77,9 @@ neutralblob = TextBlob(neutralTweets)
 plt.figure(1)
 
 #Create the three word clouds
-AddFigure(GetFilteredDictionary(negativeblob), 131, "Negative Tweets")
-AddFigure(GetFilteredDictionary(neutralblob), 132, "Neutral Tweets")
-AddFigure(GetFilteredDictionary(positiveblob), 133, "Positive Tweets")
+AddFigure(GetFilteredDictionary(negativeblob, tweetSearch), 131, "Negative Tweets")
+AddFigure(GetFilteredDictionary(neutralblob, tweetSearch), 132, "Neutral Tweets")
+AddFigure(GetFilteredDictionary(positiveblob, tweetSearch), 133, "Positive Tweets")
 
 #Show all at once
 plt.show()
