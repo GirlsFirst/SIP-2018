@@ -15,7 +15,7 @@ from wordcloud import WordCloud
 tweetSearch = "automation" 
 
 #Get the JSON data
-tweetFile = open("tweets_small.json", "r")
+tweetFile = open("../TwitterData/tweets_small.json", "r")
 tweetData = json.load(tweetFile)
 tweetFile.close()
 

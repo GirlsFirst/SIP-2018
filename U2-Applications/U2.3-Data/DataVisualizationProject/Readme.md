@@ -4,8 +4,9 @@ To run on Mac: python3 data_vis_project_pt1.py
 
 To run on Windows: python data_vis_project_pt1.py
 
-### Part 1: Print Out Tweets
-This program gets tweet data from a JSON file and prints out the text component to the screen.
+### Get Twitter Data at
+TwitterData/tweets_small.json
+Copy this to your project folder
 
 ### Part 2: Do Sentiment Analysis on The Tweets
 This program creates a histogram of polarity of tweets. This program also creates a scatter plot of polarity vs subjectivity.
