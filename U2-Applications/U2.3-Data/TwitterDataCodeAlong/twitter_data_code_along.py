@@ -4,7 +4,7 @@ In this program, we print out all the text data from our twitter JSON file.
 Please explain the comments to students as you code.
 '''
 
-# We start by importing the JSON library to use for this project
+# We start by importing the JSON library to use for this project.
 # Twitter data is stored in this format - this is the same format
 # students learned for their Survey Project!
 import json
@@ -21,7 +21,7 @@ tweetFile.close()
 
 # We then print the data of ONE tweet:
 # the [0] denotes the *first* tweet object.
-# We access parts of the tweet using ["NameOfPart"]
+# We access parts of the tweet using ["NameOfPart"].
 print("Tweet id: ", tweetData[0]["id"])
 
 # First ask students how they might print the text object:
@@ -36,12 +36,12 @@ print("Tweet text: ", tweetData[0]["text"])
 
 # Explain how here, we're using index and 
 # counting the number of tweets in the tweetData
-# using the python len() function
+# using the python len() function.
 for idx in range(len(tweetData)):
 	print("Tweet text: " + tweetData[idx]["text"])
 
 # Explain here how Pythong lets you get objects
-# direclty without having to use an index
+# direclty without having to use an index.
 for tweet in tweetData:
 	print("Tweet text: " + tweet["text"])
 
