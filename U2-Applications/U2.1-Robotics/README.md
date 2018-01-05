@@ -10,4 +10,6 @@
 1. [LetThereBeLight-Pt3](LetThereBeLight-Pt3)
     * This project is used in U2L1.
     * Students learn how to use functions and variables in Arduino C.
-
+1. [Robot Dance Party](Robotdanceparty-sample)
+    * This project is used in U2L2.
+    * Students learn how to read circuit diagrams, declare and call functions in Arduino C, and use loops.
