@@ -17,7 +17,7 @@
 
 ### Tools:
 
-1. [Tweet Processing](Tweet-Processing)
+1. [Tweet Processing](TweetProcessing)
     * This is sample code of how to download data from Twitter. 
     * This can be used to customize what data students use for Day 2.
 1. [Twitter Data](TwitterData)

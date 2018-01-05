@@ -24,4 +24,3 @@ plt.title('Average Math SAT scores in AL and MA')
 
 
 plt.show()
-
