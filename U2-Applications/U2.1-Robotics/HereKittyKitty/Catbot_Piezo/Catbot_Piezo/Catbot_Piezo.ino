@@ -2,7 +2,7 @@
 
 Servo servoRight;
 Servo servoLeft;
-const int piezo = A0;
+int piezo = A0;
 
 int sensorReading = 0;
 int threshold = 10;
