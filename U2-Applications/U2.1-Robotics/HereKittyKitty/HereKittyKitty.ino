@@ -1,4 +1,6 @@
-#include <Servo.h>                           // Include servo library
+// This version of the catbot uses the piezo as an input.
+
+#include <Servo.h>                    // Include servo library
 
 Servo servoRight;
 Servo servoLeft;
