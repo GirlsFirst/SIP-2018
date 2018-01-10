@@ -1,15 +1,17 @@
 
-#include <Servo.h>                           // Include servo library
+#include <Servo.h>                           // Include servo library.
 
-Servo servoLeft;                             // Declare left servo signal
-Servo servoRight;                            // Declare right servo signal
+Servo servoLeft;                             // Declare left servo signal.
+Servo servoRight;                            // Declare right servo signal.
 
+
+// Declare pin that the piezo is connected to.
 int PIEZOPIN = 5;
+
+// DECLARE LED PINS HERE
 int LED1 = 2;
 int LED2 = 3;
 int LED3 = 4;
-// Declare pin that the piezo is connected to.
-// DECLARE LED PINS HERE
 
 // One octave of notes between A4 and A5, for Piezo Greeting
 int note_A4 = 440;
@@ -29,12 +31,12 @@ void setup()
 {
   pinMode(PIEZOPIN, OUTPUT);                 // Attach piezo to pin 5. 
   
-  servoLeft.attach(13);                      // Attach left signal to pin 13
-  servoRight.attach(12);                     // Attach right signal to pin 12
-  servoLeft.writeMicroseconds(1500);        // Stop left servo
-  servoRight.writeMicroseconds(1500);       // Stop right servo
+  servoLeft.attach(13);                      // Attach left signal to pin 13.
+  servoRight.attach(12);                     // Attach right signal to pin 12.
+  servoLeft.writeMicroseconds(1500);         // Stop left servo.
+  servoRight.writeMicroseconds(1500);        // Stop right servo.
   
-  pinMode(LED1, OUTPUT);                    // Set all LED pins to output.  
+  pinMode(LED1, OUTPUT);                     // Set all LED pins to output.  
   pinMode(LED2, OUTPUT);
   pinMode(LED3, OUTPUT);
   
@@ -68,8 +70,7 @@ void twirlStopShake(){
 
 }
 
-// Example function that results in 3 LEDs
-// lighting up in sequence.
+// Example function that results in 3 LEDs lighting up in sequence.
 void ledSwirl(){
   
   for( int x = 0; x < 3; x++){
@@ -103,7 +104,7 @@ void piezoGreeting(){
 // The robot will play its greeting, then flash its lights, then dance.
 // If you want the lights and the dance to happen simultaneously,
 // those two functions must be combined because they currently execute
-// sequetially.
+// sequentially.
 void loop()
 {
   piezoGreeting();
@@ -114,7 +115,6 @@ void loop()
   }
 
   delay(1000);
-
 }
 
 
