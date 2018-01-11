@@ -4,7 +4,7 @@ To run on Mac: `python3 data_vis_project_pt1.py`
 
 To run on Windows: `python data_vis_project_pt1.py`
 
-Get Twitter Data at `TwitterData/tweets_small.json`. Copy this to your project folder.
+Get Twitter Data at [TwitterData/tweets_small.json](../TwitterData/tweets_small.json). Copy this to your project folder.
 
 ### Part 1: Analyze the Feelings in the Tweets 
 This program uses the TextBlob library to analyze the sentiment in a set of tweets.
