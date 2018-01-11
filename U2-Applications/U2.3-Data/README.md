@@ -5,20 +5,20 @@
 ### Projects:
 
 1. [SurveyProject](SurveyProject)
-    * The survey project is used in Day 1. 
+    * The survey project is used in U2L9. 
     * Students learn how to get and process data from a survey they create.
-1. [Twitter Code Along](TwitterDataCodeAlong)
-    * The twitter code along is used in Day 1. 
+1. [TwitterDataCodeAlong](TwitterDataCodeAlong)
+    * The Twitter code along is used in U2L9. 
     * Students learn how to process data from twitter.
-1. [Data Visualization Project](DataVisualizationProject)
-    * The data visualization project is used in Day 2. 
+1. [DataVisualizationProject](DataVisualizationProject)
+    * The data visualization project is used in U2L10. 
     * Students learn how to make visualizations with data.
 
 
 ### Tools:
 
-1. [Tweet Processing](TweetProcessing)
+1. [TweetProcessing](TweetProcessing)
     * This is sample code of how to download data from Twitter. 
-    * This can be used to customize what data students use for Day 2.
-1. [Twitter Data](TwitterData)
+    * This can be used to customize what data students use for U2L10.
+1. [TwitterData](TwitterData)
     * This is sample data for the [Twitter Code Along](TwitterDataCodeAlong) and [Data Visualization Project](DataVisualizationProject).
