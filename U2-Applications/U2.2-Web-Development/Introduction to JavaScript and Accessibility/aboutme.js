@@ -26,7 +26,7 @@ function showHideSection(section){
 function nextImg(){
   img = document.getElementById("projects");
 	if (imgID == 1) {
-    img.innerHTML = '<h1>Recent Projects:</h1><h2>Robot Project</h2><p>I made a robot dance! Check out the screenshot below!</p><img id="scratch-project" src="robot.png" alt="Screen shot of my robot">';
+    img.innerHTML = '<h1>Recent Projects:</h1><h2>Robot Project</h2><p>I made a robot dance! Check out the screenshot below!</p><img id="scratch-project" src="https://upload.wikimedia.org/wikipedia/it/7/75/Boe-bot.jpg" alt="Screen shot of my robot">';
     imgID = 2;
 	} else {
     img.innerHTML = '<h1>Recent Projects:</h1><h2>Side Scroller</h2><p>Last week, I build a cool side scroller project in Scratch. To build it, I learned about storyboarding, graphic design and using the concepts of functions, loops, conditionals, and variables. Check out the screenshot below!</p><img id="scratch-project" src="side-scrolling-screenshot.png" alt="Screen shot of Side Scroller Spaceship">';
