@@ -1,4 +1,4 @@
-<!-- Explain: We are going to set up our script to use the API. -->
+<!-- Explain: Now we are going to make the call asynchronous. -->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -6,16 +6,21 @@
 	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.4/css/ol.css" type="text/css">
 	<script src="https://openlayers.org/en/v4.6.4/build/ol.js" type="text/javascript"></script>
 
-	<!-- Step 1: Create the weathermap.js file and link it here -->
-	<script src="map_part2_setup_script.js" type="text/javascript"></script>
+	<script src="map_part7_make_call_asynchronous.js" type="text/javascript"></script>
 
 	<title>Weather Map</title>
 </head>
 <body>
+	<p> <!-- paragraph marker added here for spacing -->
+		<textarea id="country-name" rows="1" cols ="20">thailand</textarea>
+		<button onclick="makeCountryRequest()">Pan to Country</button>
+		<button onclick="panHome()">Pan back to Home</button>
+	</p>
 	<div id="map" class="map"></div>
 	<footer>
 		<p>This tutorial is based on code from: <a href="http://openlayers.org/en/latest/examples/animation.html">Open Layers View Animation</a></p>
 		<p>This map uses the <a href="http://openlayers.org/en/latest/apidoc/">Open Layers API</a></p>
+		<p>This map uses the <a href="https://restcountries.eu">REST Countries API</a></p>
 	</footer>
 </body>
 </html>

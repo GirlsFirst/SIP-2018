@@ -58,6 +58,10 @@ function panToCountry() {
 
 	var location = ol.proj.fromLonLat([lon, lat]);
 
+	// Note: If you run into an error like window
+	// not loading, check that you declared VAR
+	// before the location variable.
+
 	view.animate({
 		center: location, // Location
 		duration: 2000  // Two seconds

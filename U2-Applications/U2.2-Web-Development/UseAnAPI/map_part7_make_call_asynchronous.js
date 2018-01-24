@@ -33,7 +33,12 @@ function panHome() {
 	});
 }
 
-function panToCountry() {
+// Step 1: Make a new function with this name.
+// Copy from the Pan To Location function:
+// countryName, query, countryRequest
+// countryRequest.open()
+// countryRequest.send()
+function makeCountryRequest() {
 	var countryName = document.getElementById("country-name").value;
 	
 	if(countryName === "") {
@@ -45,48 +50,54 @@ function panToCountry() {
 
 	query = query.replace(/ /g, "%20")
 
-	var countryRequest = new XMLHttpRequest();
-	countryRequest.open('GET', query, false);
+	countryRequest = new XMLHttpRequest();
+	
+	// Step 1: Switch this last condition to TRUE
+	// This changes the call from synchronous to
+	// an asynchronous call.
+	countryRequest.open('GET', query, true);
+
+	// Step 2: Add an onload function to process
+	// what happens when we send the HTTP Request.
+	countryRequest.onload = processCountryRequest
 
 	countryRequest.send();
-	
-	//window.console.log("Ready State " + countryRequest.readyState);
-	//window.console.log("Status " + countryRequest.status);
-	//window.console.log("Response" + countryRequest.responseText);
+}
 
-	// Step 1: First we should only pan if the information was correct:
-	if(countryRequest.readyState != 4 || countryRequest.status != 200 || countryRequest.responseText === "") {
-	 	window.console.error("Request had an error!");
+function processCountryRequest() {
+	// Step 3: In the onload function, we wait
+	// until the request is complete.
+	if(countryRequest.readyState != 4) {
+		return;
+	}
+
+	// Step 4: Once the request is completed,
+	// We look for errors.
+	if (countryRequest.status != 200 || countryRequest.responseText === "") {
+	 	alert("We were unable to find your requested country!");
 	 	return;
 	}
 
-	// Step 2: Let's copy this output into a text file and
-	// see where the lattitude and longitude live
-	// We need to convert this to JSON using the JSON.parse
-	// function in order to use the data.
-	//window.console.log(countryRequest.responseText);
+
+	// Step 5: Now that the errors are gone, we add
+	// in what happens when the request succeeds.
 	var countryInformation = JSON.parse(countryRequest.responseText);
-	
-	// Step 3: We have to figure out where the information is based
-	// on the JSON we got back. This can be very tricky sometimes.
-	// For instance, this JSON returns an ARRAY of information.
-	// Inside the FIRST array element, we have our latlng variable.
-	// This variable has the information we need!
-	var lat = countryInformation[0].latlng[0];
 	var lon = countryInformation[0].latlng[1];
+	var lat = countryInformation[0].latlng[0];
 	
 	// Note: If you run into an error like the map
 	// disappearing, check that you have your
 	// longtidue and lattitude variables mapped
 	// to the right indexes. Lon is index 1,
 	// lat is index 0.
-	window.console.log(countryName + ": lon " + lon + " & lat " + lat);
+	//window.console.log("lon " + lon + " & lat " + lat);
 
 	var location = ol.proj.fromLonLat([lon, lat]);
 
 	// Note: If you run into an error like window
 	// not loading, check that you declared VAR
 	// before the location variable.
+	//window.console.log("location " + location);
 
 	view.animate({
 		center: location, // Location

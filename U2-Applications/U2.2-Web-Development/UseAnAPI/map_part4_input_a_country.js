@@ -38,8 +38,13 @@ function panHome() {
 function panToLocation() {
 	// Step 2: add the basic values we know we'll need
 	var countryName = document.getElementById("country-name").value;
-	var lon = 0.0;
-	var lat = 0.0;
+	
+	// Step 4: Let's add an error check to make sure
+	// the person has typed something in.
+	if(countryName === "") {
+	 	alert("You didn't enter a country name!");
+	 	return;
+	}
 
 	// Step 3: Let's find our country's longitude and lattitude!
 	// Ask the students to find the documentation where they can
@@ -51,6 +56,8 @@ function panToLocation() {
 	
 	// Step 2: Add the conversion from longitude and lattitude 
 	// that we used for our home location!
+	var lon = 0.0;
+	var lat = 0.0;
 	var location = ol.proj.fromLonLat([lon, lat]);
 
 	// Step 2: Add the animation that we used in panHome
