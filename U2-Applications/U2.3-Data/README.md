@@ -5,14 +5,19 @@
 ### Projects:
 
 1. [SurveyProject](SurveyProject)
-    * The survey project is used in U2L9. 
+    * This project is used in U2L9. 
     * Students learn how to get and process data from a survey they create.
 1. [TwitterDataCodeAlong](TwitterDataCodeAlong)
-    * The Twitter code along is used in U2L9. 
+    * This project is used in U2L9. 
     * Students learn how to process data from twitter.
 1. [DataVisualizationProject](DataVisualizationProject)
-    * The data visualization project is used in U2L10. 
+    * This project is used in U2L10. 
     * Students learn how to make visualizations with data.
+1. [DataScientist](DataScientist)
+    * This project is used in U2L11.
+    * Students learn how to draw conclusions from data by asking a question.
+1. [DictionaryAttack](DictionaryAttack)
+    * ?
 
 
 ### Tools:
