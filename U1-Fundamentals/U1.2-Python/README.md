@@ -11,6 +11,6 @@
 1. [Chatbot](chatbot)
     * This project is used in U1L7.
     * Students learn to use functions in Python.
-1. Obamicon
+1. [Obamicon](obamicon)
     * This project is used in U1L8.
     * Students learn about libraries and use the PIL library to create filters for an image.
