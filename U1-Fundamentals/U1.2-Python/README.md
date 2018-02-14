@@ -7,6 +7,9 @@
 1. [Text Adventure](text-adventure)
     * This project is used in U1L5.
     * Students practice loops, variables, and conditionals in Python while translating their Choose Your Own Adventure project from Scratch.
+1. [List Challenge](list-challenge)
+    * This project is used in U1L6.
+    * Students practice using lists in Python.
 1. [Hangman](hangman)
     * This project is used in U1L6.
     * Students learn how to use lists while creating a hangman game.
