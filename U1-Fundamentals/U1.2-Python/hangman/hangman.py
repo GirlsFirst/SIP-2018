@@ -9,10 +9,10 @@ while True:
 guesses = []
 numfails = 0
 maxfails = 7
-completedword = []
+wordToGuess = []
 
 for letter in word:
-	completedword.append("_");
+	wordToGuess.append("_");
 
 for idx in range(0, 20):
 	print(" ")
@@ -23,7 +23,7 @@ while not done:
 	print("-----------------------------------")
 	print("Lives Left: ", maxfails - numfails)
 	print("Guesses So Far: ", guesses)
-	print("Current Word: ", completedword)
+	print("Current Word: ", wordToGuess)
 
 	guess = input("Guess a letter: ")
 	guess = guess.lower()
@@ -41,11 +41,11 @@ while not done:
 			print("You got a letter!")
 			for idx in range(0, len(word)):
 				if word[idx] == guess:
-					completedword[idx] = guess
+					wordToGuess[idx] = guess
 
 			done = True
-			for idx in range(0, len(completedword)):
-				if completedword[idx] == "_":
+			for idx in range(0, len(wordToGuess)):
+				if wordToGuess[idx] == "_":
 					done = False
 					break
 			if done:
