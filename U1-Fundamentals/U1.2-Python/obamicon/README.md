@@ -10,3 +10,5 @@ To run on Windows:
 
 * `obamicon.py`
     * This program will create a new image called "recolored.jpg" in the current directory.
+* `obamicon-ext.py`
+    * This program includes additional image filters that students may choose to program.
