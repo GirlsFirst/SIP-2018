@@ -87,6 +87,20 @@ def add_color(pixels, color):
 
   return new_pixels
 
+# Return a sequence of pixels, with invert filter applied.
+def invert(pixels):
+  # Create a list to hold the new image pixel data.
+  new_pixels = []
+
+  # Process the pixels in the image.
+  for p in pixels:
+    new_r = 255-p[0]
+    new_g = 255-p[1]
+    new_b = 255-p[2]
+    new_pixels.append((new_r, new_g, new_b))
+
+  return new_pixels
+
 # Return a grayscale tuple for a single pixel value.
 def avg_pixel(pixel):
   # Use the average of p's RGB values to set a new pixel value.
@@ -97,8 +111,6 @@ def main():
   # Load the image from a file.
   im = Image.open("brooklyn.jpg")
   pixels = im.getdata()
-
-  newim = Image.new("RGB", im.size)
 
   # Calculate the Obamicon filter!
   obamicon_pixels = obamicon(pixels)
@@ -127,6 +139,13 @@ def main():
   # Save the recolored pixels to a new image.
   newim.putdata(add_color_pixels)
   newim.save("recolored_add_color.jpg", "jpeg")
+  newim.show() # Display the new image to the user.
+
+  # Calculate the invert filter!
+  invert_pixels = invert(pixels)
+  # Save the recolored pixels to a new image.
+  newim.putdata(invert_pixels)
+  newim.save("recolored_invert.jpg", "jpeg")
   newim.show() # Display the new image to the user.
 
 if __name__ == "__main__":
