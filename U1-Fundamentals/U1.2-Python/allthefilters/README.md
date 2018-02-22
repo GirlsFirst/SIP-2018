@@ -6,7 +6,7 @@ To run on Mac:
 To run on Windows:
 `$ python filtergram.py`
 
-A sample image - [(brooklyn.jpg)](brooklyn.jpg) - has been included for testing purposes.
+A sample image ([brooklyn.jpg](brooklyn.jpg)) has been included for testing purposes.
 
 
 ## Contents
