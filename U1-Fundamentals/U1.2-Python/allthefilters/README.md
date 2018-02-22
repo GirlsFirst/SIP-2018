@@ -1,4 +1,4 @@
-# Obamicon
+# #AllTheFilters
 
 To run on Mac:
 `$ python3 filtergram.py`
