@@ -15,7 +15,7 @@ This project is split into the following parts:
 
 * [Part 1](part1): Setting Up The Basics
     * In `filters.py`, students write the `load_img()` and `save_img()` functions.
-    * In `filtergram.py`, students test out their filters library by loading and saving an image. 
+    * In `filtergram.py`, students test out their filters library by loading and saving an image. (The saved image will look identical to the source image, since no filters have been applied yet!)
 * [Part 2](part2): Building Your First Filter
     * In `filters.py`, students write the `obamicon()` filter.
     * In `filtergram.py`, students apply their Obamicon filter to an image.
