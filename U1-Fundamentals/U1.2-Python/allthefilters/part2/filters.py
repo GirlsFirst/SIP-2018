@@ -1,14 +1,27 @@
 from PIL import Image
 
-def obamicon(pixels):
+def load_img(filename):
+  im = Image.open(filename)
+  return im
+
+def show_img(im):
+  im.show()
+
+def save_img(im, filename):
+  im.save(filename, "jpeg")
+  show_img(im)
+
+def obamicon(im):
+  # Load the pixel data from im.
+  pixels = im.getdata()
+  # Create a list to hold the new image pixel data.
+  new_pixels = []
+
   # Define color constants to use for recoloring.
   darkBlue = (0, 51, 76)
   red = (217, 26, 33)
   lightBlue = (112, 150, 158)
   yellow = (252, 227, 166)
-
-  # Create a list to hold the new image pixel data.
-  new_pixels = []
 
   # Process the pixels in the image.
   for p in pixels:
@@ -27,23 +40,7 @@ def obamicon(pixels):
     elif intensity >=546:
       new_pixels.append(yellow)
 
-  return new_pixels
-
-
-def main():
-  # Load the image from a file.
-  im = Image.open("brooklyn.jpg")
-  pixels = im.getdata()
-
-  # Calculate the Obamicon filter!
-  new_pixels = obamicon(pixels)
-
-  # Save the recolored pixels to a new image.
+  # Save the filtered pixels as a new image
   newim = Image.new("RGB", im.size)
   newim.putdata(new_pixels)
-  newim.save("recolored.jpg", "jpeg")
-
-  newim.show() # Display the new image to the user.
-
-if __name__ == "__main__":
-  main()
+  return newim
