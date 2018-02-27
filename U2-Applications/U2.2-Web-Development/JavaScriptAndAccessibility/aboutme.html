@@ -11,11 +11,13 @@
     <img id="profile-pic" src="https://s-media-cache-ak0.pinimg.com/564x/6c/da/e3/6cdae3b0ec64946d4b49ef1907030da1.jpg" alt="Susie Sumbody" onmouseover="bigImg(this)" onmouseout="normalImg(this)"/> Susie Sumbody
     <span id="navigation">
       <a href="contact.html">Contact</a>
-      <a href="hello.html">Home</a>
+      <a href="aboutme.html">Home</a>
     </span>
   </div>
 
-  <button id="show/hide" onclick="showHideSection('bio')">Hide Bio</button>
+  <div class="content">
+    <button id="show/hide" onclick="showHideSection('bio')">Hide Bio</button>
+  </div>
   <div id="bio" class="content"><!-- Use divs to break up the sections of your website. Use the id attribute if you want your CSS to uniquely isolate this element, or use the class attribute if you want to isolate a group of elements. -->
     <h1>Bio:</h1>
     <p>I am a girl who codes from Sumware, CA. I will be in the 12th grade in the fall, and I am looking forward to applying to colleges. I live at home with my mom, my brother, and my cat named Seymore. When I'm not coding, you can find me listening to music with my friends or reading.
@@ -40,8 +42,9 @@
     </p>
   </div>
 
-  <button onclick="nextImg()">Next Image</button>
+  
   <div id="projects" class="content">
+    <button onclick="nextImg()">Next Image</button>
     <h1>Recent Projects:</h1>
     <h2>Side Scroller Project:</h2>
     <p>

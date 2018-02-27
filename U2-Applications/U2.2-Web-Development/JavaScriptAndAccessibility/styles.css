@@ -1,0 +1,51 @@
+body {
+  background-color: mintcream;
+  color: teal;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 10px 20px 10px 20px;
+}
+
+h1 {
+  color: lightseagreen;
+  font-size: 36px;
+}
+
+p, li {
+  font-size: 20px;
+}
+
+a {
+  color: lightseagreen;
+}
+
+#header {
+  border: 2px solid teal;
+  padding: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#navigation a {
+  float: right;
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#profile-pic {
+  height: 70px;
+  vertical-align: middle;
+}
+
+.content {
+  padding: 15px 50px 15px 50px;
+}
+
+#bio {
+  border-bottom: 1px solid teal;
+}
+
+#scratch-project {
+  width: 700px;
+}
