@@ -61,7 +61,7 @@ function panToCountry() {
 	}
 
 	// Step 2: Let's copy this output into a text file and
-	// see where the lattitude and longitude live
+	// see where the latitude and longitude live
 	// We need to convert this to JSON using the JSON.parse
 	// function in order to use the data.
 	//window.console.log(countryRequest.responseText);
@@ -77,7 +77,7 @@ function panToCountry() {
 	
 	// Note: If you run into an error like the map
 	// disappearing, check that you have your
-	// longtidue and lattitude variables mapped
+	// longtidue and latitude variables mapped
 	// to the right indexes. Lon is index 1,
 	// lat is index 0.
 	window.console.log(countryName + ": lon " + lon + " & lat " + lat);

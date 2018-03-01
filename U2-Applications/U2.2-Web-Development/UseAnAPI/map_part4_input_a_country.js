@@ -46,7 +46,7 @@ function panToLocation() {
 	 	return;
 	}
 
-	// Step 3: Let's find our country's longitude and lattitude!
+	// Step 3: Let's find our country's longitude and latitude!
 	// Ask the students to find the documentation where they can
 	// search / query for a location's information!
 	// Once you write this, pause and ask students what next?
@@ -54,7 +54,7 @@ function panToLocation() {
 	// just a url...
 	var query = "https://restcountries.eu/rest/v2/name/"+countryName;
 	
-	// Step 2: Add the conversion from longitude and lattitude 
+	// Step 2: Add the conversion from longitude and latitude 
 	// that we used for our home location!
 	var lon = 0.0;
 	var lat = 0.0;
@@ -63,7 +63,7 @@ function panToLocation() {
 	// Step 2: Add the animation that we used in panHome
 	// and swap out what we pan to! Stop here and run the code.
 	// When it errors, ask the students what they think happened.
-	// Direct them to think about the 0, 0 of longitude and lattitude 
+	// Direct them to think about the 0, 0 of longitude and latitude 
 	view.animate({
 		center: location, // Location
 		duration: 2000  // Two seconds

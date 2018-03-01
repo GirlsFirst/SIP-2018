@@ -87,7 +87,7 @@ function processCountryRequest() {
 	
 	// Note: If you run into an error like the map
 	// disappearing, check that you have your
-	// longtidue and lattitude variables mapped
+	// longtidue and latitude variables mapped
 	// to the right indexes. Lon is index 1,
 	// lat is index 0.
 	//window.console.log("lon " + lon + " & lat " + lat);

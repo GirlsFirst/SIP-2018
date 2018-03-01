@@ -40,7 +40,7 @@ function panHome() {
 // Final Step: Now ask the students how they might
 // let someone move the map to a particular
 // city or location. Would they have the
-// user input longitude/lattitude, or is it
+// user input longitude/latitude, or is it
 // easier for them to use a name of a city?
 // To use the name of a city, we need
 // another API!

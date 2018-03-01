@@ -1,6 +1,6 @@
 # Map and Weather API Page
 
-This is a multi-part code along. Each part starts with the map_part_.html file. 
+This is a multi-part code along. Each part starts with the map_part_*.html file. 
 
 Start by opening the map_part0_startercode.html file. Each file will have ordered steps and explanations.
 

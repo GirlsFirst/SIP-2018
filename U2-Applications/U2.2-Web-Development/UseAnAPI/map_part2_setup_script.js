@@ -1,8 +1,8 @@
 // Step 2: Ask students what kinds of information they need to start with:
 //  -- Since this is a "Map API" - we probably need a map.
 //  -- We also need to specify where to center the map!
-//     Have the students go to google and find out the
-//     longitude and lattitude of the SIP location.
+//     Have the students go to Google and find out the
+//     longitude and latitude of the SIP location.
 //  -- In order to "see" the map and interact with it, we need
 //     a view. A view is like a computer screen. The computer
 //     can do processes without it, but we won't be able to see.
