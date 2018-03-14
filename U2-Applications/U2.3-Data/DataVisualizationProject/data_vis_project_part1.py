@@ -24,3 +24,6 @@ for tweet in tweetData:
 
 	#[OPTIONAL] Subjectivity
 	subjectivityList.append(tweetblob.subjectivity)
+
+print(polarityList)
+print(subjectivityList)
