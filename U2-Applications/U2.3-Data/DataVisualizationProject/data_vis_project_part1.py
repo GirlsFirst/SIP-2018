@@ -1,16 +1,5 @@
 '''
-In this program, we display a histogram of the polarities of all the tweets.
-
-[OPTIONAL]
-In this program, we will also display a scatter plot of polarity vs subjectivity.
-
-For students who finish this part of the program quickly,
-they might try out the optional graph. They might also try
-using the larger tweet file to generate the graph (this might take a while).
-
-They might also try to combine both graphs into one display.
-They can also play around with different bins for the histogram
-or try to draw centeredaxes on the scatter plot using matplotlib "spines".
+In this program, we store the polarities and subjectivities of all the tweets.
 '''
 
 import json
@@ -35,3 +24,6 @@ for tweet in tweetData:
 
 	#[OPTIONAL] Subjectivity
 	subjectivityList.append(tweetblob.subjectivity)
+
+print(polarityList)
+print(subjectivityList)

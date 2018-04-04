@@ -18,7 +18,7 @@ All of the following projects are hosted on Scratch.
 1. [State Machine Challenge](https://scratch.mit.edu/projects/202394000/)
     * This project is used in U1L3.
     * Students learn how to make a state machine in Scratch.
-1. [Choose Your Own Adventure Game](https://scratch.mit.edu/projects/142769364/)
+1. [Choose Your Own Adventure Game](https://scratch.mit.edu/projects/200106180/)
     * This project is used in U1L3.
     * Students practice making state machines and using conditionals in Scratch.
 1. [Maze Game](https://scratch.mit.edu/projects/201471886/)

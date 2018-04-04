@@ -22,7 +22,7 @@ print("")
 
 from random import *
 
-#Code below is the skeleton for a simple name generator.
+#Code below is the skeleton for a menu generator.
 
 #Create the list of words you want to choose from.
 side = ["beans", "rice", "salsa", "guac", "chips"]
@@ -53,7 +53,7 @@ print("")
 
 from random import *
 
-#Code below is the skeleton for a simple name generator.
+#Code below is the skeleton for a simple haiku generator.
 
 #Create the list of words you want to choose from.
 five_syllable = ["Hey, I just met you", "First I was afraid", "Love the one you’re with"]
