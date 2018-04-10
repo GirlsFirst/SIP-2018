@@ -16,6 +16,7 @@ def main():
   if not in_dictionary:
     print("Password not found... in this dictionary attack")
 
+# For extension project only:
 # Check and convert common letter-to-number substitutions
 def find_variations(password):
   password = password.replace("1", "l")
