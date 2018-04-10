@@ -25,3 +25,10 @@
 1. [Escape Bot](EscapeBot)
     * This project is used in U2L4.
     * Students learn AI development by creating a robot that can escape from a three-sided box.
+
+### Reference:
+
+1. [Circuits](Circuits)
+    * These are circuit diagrams for the different inputs used in U2L3.
+1. [CodeExamples](CodeExamples)
+    * These files include the code snippets that are shown on the slides in U2L3.
