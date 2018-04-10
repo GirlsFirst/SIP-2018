@@ -50,7 +50,7 @@ for word in tweetblob.words:
 		continue;
 	
 	#Try lower case only, try with upper case!
-	filteredDictionary[word.lower()] = tweetblob.words.count(word, case_sensitive=False) 
+	filteredDictionary[word.lower()] = tweetblob.word_counts[word.lower()]
 
 #Create the word cloud
 wordcloud = WordCloud().generate_from_frequencies(filteredDictionary)
