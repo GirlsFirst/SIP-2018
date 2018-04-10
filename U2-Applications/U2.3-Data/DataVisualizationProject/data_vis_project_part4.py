@@ -33,7 +33,7 @@ def GetFilteredDictionary(tweetblob, tweetSearch):
 			continue;
 		
 		#Try lower case only, try with upper case!
-		filteredDictionary[word.lower()] = tweetblob.words.count(word, case_sensitive=False)
+		filteredDictionary[word.lower()] = tweetblob.word_counts[word.lower()]
 
 	return filteredDictionary
 
