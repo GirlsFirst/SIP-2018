@@ -23,8 +23,8 @@
 
 ### Tools:
 
-1. [TweetProcessing](TweetProcessing)
+1. [Tweet Processing](TweetProcessing)
     * This is sample code of how to download data from Twitter. 
     * This can be used to customize what data students use for U2L10.
-1. [TwitterData](TwitterData)
+1. [Twitter Data](TwitterData)
     * This is sample data for the [Twitter Code Along](TwitterDataCodeAlong) and [Data Visualization Project](DataVisualizationProject).
