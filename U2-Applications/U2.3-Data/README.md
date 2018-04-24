@@ -1,4 +1,4 @@
-# Unit 2, Part 3: Data
+# Unit 2.3: Data
 
 ## Table of Contents
 
@@ -17,7 +17,8 @@
     * This project is used in U2L11.
     * Students learn how to draw conclusions from data by asking a question.
 1. [DictionaryAttack](DictionaryAttack)
-    * ?
+    * This project is used in U2L12.
+    * Students learn how to check whether a password could withstand a dictionary attack.
 
 
 ### Tools:
