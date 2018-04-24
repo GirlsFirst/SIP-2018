@@ -1,8 +1,8 @@
 # Twitter Data Code Along
 
-To run on Mac: python3 twitter_data_code_along.py
+To run on Mac: `python3 twitter_data_code_along.py`
 
-To run on Windows: python twitter_data_code_along.py
+To run on Windows: `python twitter_data_code_along.py`
 
 1. Get Twitter Data at [../TwitterData/tweets_small.json](../TwitterData/tweets_small.json).
     * Copy this file to your project folder.
