@@ -40,8 +40,8 @@ print("Tweet text: ", tweetData[0]["text"])
 for idx in range(len(tweetData)):
 	print("Tweet text: " + tweetData[idx]["text"])
 
-# Explain here how Pythong lets you get objects
-# direclty without having to use an index.
+# Explain here how Python lets you get objects
+# directly without having to use an index.
 for tweet in tweetData:
 	print("Tweet text: " + tweet["text"])
 
