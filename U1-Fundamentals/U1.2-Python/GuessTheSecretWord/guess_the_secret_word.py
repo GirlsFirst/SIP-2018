@@ -1,10 +1,16 @@
-while True:
-	word = input("Type a word for someone to guess: ")
-	word = word.lower()
-	if(word.isalpha() == False):
-		print("That's not a word")
-	else:
-		break
+import random
+
+# A list of words that 
+potential_words = ["example", "words", "someone", "can", "guess"]
+
+word = random.choice(potential_words)
+
+# Use to test your code:
+# print(word)
+
+# Converts the word to lowercase
+word = word.lower()
+
 
 guesses = []
 numfails = 0
@@ -12,10 +18,7 @@ maxfails = 7
 wordToGuess = []
 
 for letter in word:
-	wordToGuess.append("_");
-
-for idx in range(0, 20):
-	print(" ")
+	wordToGuess.append("_")
 
 done = False
 
@@ -49,7 +52,7 @@ while not done:
 					done = False
 					break
 			if done:
-				print("You won!")
+				print("You won! It was: " + word)
 		else:
 			print("Wrong guess!")
 			numfails += 1
@@ -57,6 +60,3 @@ while not done:
 			if numfails >= maxfails:
 				print("You lost!")
 				done = True
-
-
-
