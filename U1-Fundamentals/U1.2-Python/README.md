@@ -13,9 +13,9 @@
 1. [List Challenge](ListChallenge)
     * This project is used in U1L6.
     * Students practice using lists in Python.
-1. [Hangman](Hangman)
+1. [Guess The Secret Word](GuessTheSecretWord)
     * This project is used in U1L6.
-    * Students learn how to use lists while creating a hangman game.
+    * Students learn how to use lists while creating a Guess The Secret Word game.
 1. [Chatbot](Chatbot)
     * This project is used in U1L7.
     * Students learn to use functions in Python.
