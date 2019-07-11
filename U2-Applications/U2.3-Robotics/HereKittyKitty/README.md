@@ -7,6 +7,6 @@ To run:
 1. Verify code.
 1. Upload program to robot.
 
-This program uses a piezo as input to make a "catbot" move toward a sound.
+This program uses a piezo as input to make a "catbot" move when the piezospeaker is tapped (knock sensor).
 
 **Note:** Student solutions may choose to use other sensors besides the piezo as an input.
