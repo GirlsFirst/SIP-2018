@@ -31,12 +31,12 @@ while done == "NO":
 
     # Iterate over the list of survey questions and take in user responses.
     for x in range(len(survey)):
-        response = raw_input(survey[x] +":     ")
+        response = input(survey[x] +":     ")
         answers[keys[x]] = response
 
     list_of_answers.append(answers)
 
-    done = raw_input("Are you done collecting information? Type YES or NO.     ").upper()
+    done = input("Are you done collecting information? Type YES or NO.     ").upper()
 
 # Print the list of dictionaries.
 print(list_of_answers)

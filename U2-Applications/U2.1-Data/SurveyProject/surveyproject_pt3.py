@@ -30,11 +30,11 @@ while done == "NO":
 
     # Iterate over the list of survey questions and take in user responses.
     for x in range(len(survey)):
-        response = raw_input(survey[x] +":     ")
+        response = input(survey[x] +":     ")
         answers[keys[x]] = response
 
     list_of_answers.append(answers)
-    done = raw_input("\nAre you done collecting information? Type YES or NO.     ")
+    done = input("\nAre you done collecting information? Type YES or NO.     ")
 
 # Open the file containing all past results and append them to our current list.
 f = open("allanswers.json", "r")

@@ -26,15 +26,9 @@ def say_default():
 # Check if user_input matches one of the elements
 #  in valid_responses.
 def is_valid_input(user_input, valid_responses):
-  for item in valid_responses:
-    if user_input == item:
-      # If you find a matching response, the input is
-      #  valid for this kind of response.
-      return True
-  # If you didn't find a matching response, after
-  #  going through the entire list, the input
-  #  isn't valid for this kind of response.
-  return False
+    if user_input in valid_responses:
+        return True
+    return False
 
 # --- Put your main program below! ---
 def main():

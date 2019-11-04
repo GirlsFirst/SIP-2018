@@ -22,7 +22,7 @@ keys = ["name", "age", "hometown", "DOB"]
 
 # Iterate over the list of survey questions and take in user responses.
 for x in range(len(survey)):
-    response = raw_input(survey[x] +":     ")
+    response = input(survey[x] +":     ")
     answers[keys[x]] = response
 
 # Print the entire dictionary.
